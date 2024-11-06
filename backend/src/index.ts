@@ -1,12 +1,12 @@
+import { config } from '@/config';
+import { resolvers } from '@/features/resolvers';
+import typeDefs from '@/features/typeDefs';
 import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
 import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
 import cors from 'cors';
 import express from 'express';
 import http from 'http';
-import { config } from './config';
-import { resolvers } from './features/resolvers';
-import typeDefs from './features/typeDefs';
 
 async function startApolloServer() {
   const app = express();

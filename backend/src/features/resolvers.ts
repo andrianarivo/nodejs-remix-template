@@ -1,6 +1,6 @@
-import { Resolvers } from '../generated/graphql';
-import * as helloWorldMutations from './hello-world/mutations';
-import * as helloWorldQueries from './hello-world/queries';
+import { Resolvers } from '@/__generated__/graphql';
+import * as helloWorldMutations from '@/features/hello-world/mutations';
+import * as helloWorldQueries from '@/features/hello-world/queries';
 
 const Query = {
   ...helloWorldQueries
